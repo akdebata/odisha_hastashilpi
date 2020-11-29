@@ -1,17 +1,20 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 import Products from "./components/Products";
-import data from "./data";
+import { Homescreen } from "./Screens/HomeScreen";
+import { Productscreen } from "./Screens/ProductScreen";
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      products: data.products,
+      products: "",
       availableCol: "",
       sort: ""
     }
   }
   render() {
     return (
+      <BrowserRouter>
       <div className="grid-container">
       <header className="row">
         <div>
@@ -25,16 +28,13 @@ class App extends React.Component {
         </div>
       </header>
       <main>
-        <div>
-          <div className="row center">
-            {data.products.map((product) => (
-              <Products key={product._id}product={product}></Products>
-            ))}
-          </div>
-        </div>
+        <Route path="/product/:id" component={Productscreen }></Route>
+        <Route path="/" component={Homescreen} exact></Route>
+        
       </main>
       <footer className="row center">All right reserved</footer>
     </div>
+    </BrowserRouter>
     );
   }
 
