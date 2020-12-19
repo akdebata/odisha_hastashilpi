@@ -12,7 +12,7 @@ const data = {
       {
         name:"Akhil Debata ",
         email: "Akhildebata@gmail.com",
-        password: bcrypt.hashSync("1234",8),
+        password: bcrypt.hashSync("1235",8),
         isAdmin:false,
         
 
@@ -20,7 +20,7 @@ const data = {
     ],
     products: [
       {
-        _id: '1',
+       
         name: 'Nike Slim Shirt',
         category: 'Shirts',
         image: '/images/p1.jpg',
@@ -32,9 +32,9 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '2',
-        name: 'Adidas Fit Shirt',
-        category: 'Shirts',
+        
+        name: 'Adidas Fit Shirt 1',
+        category: 'Shirts1',
         image: '/images/p2.jpg',
         price: 5200,
         brand: 'Adidas',
@@ -44,9 +44,9 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '3',
-        name: 'Lacoste Free Shirt',
-        category: 'Shirts',
+       
+        name: 'Lacoste Free Shirt 2',
+        category: 'Shirts2',
         image: '/images/p3.jpg',
         price: 5400,
         brand: 'Lacoste',
@@ -56,9 +56,9 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '4',
-        name: 'Nike Slim Pant',
-        category: 'Pants',
+        
+        name: 'Nike Slim Pant 3',
+        category: 'Pants3',
         image: '/images/p4.jpg',
         price: 5400,
         brand: 'Nike',
@@ -69,9 +69,9 @@ const data = {
       },
      
       {
-        _id: '5',
-        name: 'Puma Slim Pant',
-        category: 'Pants',
+        
+        name: 'Puma Slim Pant 4',
+        category: 'Pants4',
         image: '/images/p5.jpg',
         price: 65,
         brand: 'Puma',
@@ -81,9 +81,9 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '6',
-        name: 'Ajay Patta',
-        category: 'Pants',
+       
+        name: 'Ajay Patta 5',
+        category: 'Pants5',
         image: '/images/p4.jpg',
         price: 5400,
         brand: 'Nike',
