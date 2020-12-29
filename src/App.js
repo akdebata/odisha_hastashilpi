@@ -7,6 +7,7 @@ import Products from "./components/Products";
 import { Cartscreen } from "./Screens/CartScreen";
 import { Homescreen } from "./Screens/HomeScreen";
 import { Productscreen } from "./Screens/ProductScreen";
+import RegisterScreen from "./Screens/RegisterScreen";
 import Signinscreen from "./Screens/SigninScreen";
 function App() {
   const userSignin = useSelector((state) => state.userSignin);
@@ -56,6 +57,7 @@ function App() {
           <Route path="/cart/:id?" component={Cartscreen}></Route>
           <Route path="/product/:id" component={Productscreen}></Route>
           <Route path="/signin" component={Signinscreen}></Route>
+          <Route path="/register" component={RegisterScreen}></Route>
           <Route path="/" component={Homescreen} exact></Route>
         </main>
         <footer className="row center">All right reserved</footer>
