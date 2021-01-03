@@ -4,9 +4,11 @@ import { saveShippingAddress } from '../actions/cartActions';
 import Checkoutsteps from '../components/CheckoutSteps'
 
 export function Shippingaddressscreen(props) {
+    
+    const cart = useSelector((state) => state.cart);
     const userSignin= useSelector(state => state.userSignin);
     const {userInfo} = userSignin;
-    const cart = useSelector(state => state.cart);
+    
     const{shippingAddress} = cart;
     if(!userInfo){
         props.history.push('/signin');
